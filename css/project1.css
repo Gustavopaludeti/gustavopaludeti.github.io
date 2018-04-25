@@ -1,0 +1,53 @@
+body{
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/groovepaper.png");
+}
+
+h1,h2,h3,h4,h5{
+  font-family: 'Poiret One', cursive;
+  text-transform: uppercase;
+}
+h1{
+  text-align: center;
+  font-size: 5em;
+  line-height: 1.25em;
+}
+h6,li{
+ font-family: 'Open Sans', sans-serif;
+}
+p{
+  font-family: 'Open Sans', serif;
+}
+.v-center{
+height: auto;
+margin-top: 10%;
+
+}
+a{
+  color: black;
+}
+
+
+nav ul{
+  list-style-type: none;
+  text-align: center;
+}
+nav li{
+  display: inline;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+}
+nav li a:link, nav li a:visited{
+  text-decoration: none;
+  background-color: rgb(89, 116, 67);
+/*greyblue   */
+  color: rgb(230, 240, 247);
+  /*offwhite*/
+  border-radius: 2px;
+  padding: 4px 8px;
+  margin: 3px;
+}
+nav li a:hover{
+  background-color: rgb(155, 179, 135);
+  text-decoration: underline;
+}

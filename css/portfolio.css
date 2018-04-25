@@ -1,0 +1,84 @@
+body{
+  background-image: url("../img/camo.jpg");
+}
+
+h1,h2,h3,h4,h5{
+font-family: 'Playfair Display', serif;
+color: white;
+}
+h6,p{
+font-family: 'Lato', sans-serif;
+color: white;
+font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+/* nav */
+
+
+main{
+  background-color: rgb(102, 102, 102);
+}
+
+nav ul{
+  list-style-type: none;
+  text-align: center;
+
+
+}
+nav li{
+  display: inline;
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+  color: white;
+
+
+
+}
+nav li a:link, nav li a:visited{
+  color: white;
+  text-decoration: none;
+  border-radius: 2px;
+  padding: 4px 8px;
+  margin: 3px;
+}
+nav li a:hover{
+  text-decoration: underline;
+}
+
+nav li menu-text{
+  color: white;
+}
+
+
+
+
+/* nav ul{
+  list-style-type: none;
+
+}
+nav li{
+  display: inline;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+nav li a:link, nav li a:visited{
+  text-decoration: none;
+  background-color: rgb(76, 104, 124);
+/*greyblue   */
+  /* color: rgb(230, 240, 247);
+  /*offwhite*/
+  /* border-radius: 2px; */
+  /* padding: 4px 8px; */
+  /* margin: 3px; */
+/* }
+nav li a:hover{
+  background-color: rgb(76, 104, 124);
+} */

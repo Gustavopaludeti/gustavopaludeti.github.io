@@ -1,0 +1,72 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+         <!--!!!!!! need for zurb. edit file paths!!!!! -->
+    <link rel="stylesheet" href="../zurb/css/foundation.css">
+    <link rel="stylesheet" href="../zurb/css/app.css">
+         <!--!!!!!! need for zurb. edit file paths!!!!! -->
+   <link href="https://fonts.googleapis.com/css?family=Lato|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="../css/portfolio.css">
+
+
+  </head>
+  <body>
+
+          <div class="title-bar" data-responsive-toggle="main-nav-animated-menu" data-hide-for="large">    <!-- nav-->
+          <button class="menu-icon" type="button" data-toggle="main-nav-animated-menu"></button>
+          <div class="title-bar-title">Menu</div>
+        </div>
+
+        <nav class="top-bar" id="main-nav-animated-menu" data-animate="hinge-in-from-top spin-out">
+          <div class="top-bar-left">
+            <ul class="dropdown menu vertical medium-horizontal menu" data-responsive-menu= "drilldown medium-dropdown" data-auto-height="true" data-animate-height="true">
+              <li class="menu-text">GP</li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="gallery.html">Galllery</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </div>
+          <div class="top-bar-right">
+            <ul class="menu">
+              <p id="demo"></p>
+              <script>
+                var d = new Date();
+              document.getElementById("demo").innerHTML = d.toDateString();
+              </script>
+            </ul>
+          </div>
+        </nav>                                                                                              <!-- nav-->
+
+
+    <main class="grid-container">
+      <section class="grid-x grid-padding-x grid-padding-y"> <!-- bar-->
+          <figure class="large-12 cell">
+              <img src="../img/homepage.jpg" alt="placeholder image">
+          </figure>
+        </section>
+        <section class="grid-x grid-padding-x grid-padding-y"> <!-- row 1 -->
+
+            <figure class="large-4 cell">
+              <h3>Mission Statement</h3>
+                <p>Gustavo Paludeti Provides versatile design solutions to forward thinking clients in a welcoming, and quick pace environment with a friendly voice, helping them feel confident
+                  and proud of their own brand</p>
+            </figure>
+            <figure class="large-8 cell">
+                <img src="../img/home.jpg" alt="placeholder image">
+            </figure>
+          </section>
+    </main>
+
+
+     <!--!!!!!! need for zurb - EDIT FILE PATHS!!!!! -->
+    <script src="../zurb/js/vendor/jquery.js"></script>
+    <script src="../zurb/js/vendor/what-input.js"></script>
+    <script src="../zurb/js/vendor/foundation.js"></script>
+    <script src="../zurb/js/app.js"></script>
+     <!--!!!!!! need for zurb - EDIT FILE PATHS!!!!! -->
+  </body>
+</html>
