@@ -1,0 +1,47 @@
+ body{
+   background: rgb(242, 247, 255);
+ }
+ main{
+
+ }
+
+li{
+  font-family: 'Raleway', sans-serif;
+}
+.drilldown a, {
+  padding: 0.7rem 1rem;
+  color: white;
+  background:rgb(88, 102, 124); } /* blue grey */
+
+  .top-bar,
+  .top-bar ul {
+    background-color:rgb(88, 102, 124); }   /* blue grey */
+
+    .top-bar li {
+      font-size: 16pt;
+      margin-top: auto;
+      margin-bottom: auto;
+
+    }
+    .top-bar img {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    .drilldown a {
+      background-color: rgb(88, 102, 124); /* blue grey */
+    }
+
+
+
+
+  .title-bar {
+    padding: 0.5rem;
+    background: rgb(88, 102, 124); /* blue grey */
+    color: white;
+   }
+    .title-bar .menu-icon {
+      margin-left: 0.25rem;
+      margin-right: 0.25rem; }
+      .menu-text{
+        color: white;
+      }

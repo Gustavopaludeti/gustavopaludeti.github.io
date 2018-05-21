@@ -1,0 +1,190 @@
+body{
+
+}
+
+h1,h2,h3,h4,h5{
+  font-family: 'Poiret One', cursive;
+  text-transform: uppercase;
+}
+h1{
+  text-align: center;
+  font-size: 5em;
+  line-height: 1.25em;
+}
+h6,li{
+ font-family: 'Raleway', sans-serif;
+}
+p{
+  font-family: 'Raleway', sans-serif;
+  color: black;
+}
+
+a{
+  font-family: 'Poiret One', cursive;
+  color: white;
+}
+
+
+nav ul{
+  list-style-type: none;
+  text-align: center;
+}
+nav li{
+  display: inline;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+nav li a:link, nav li a:visited{
+  text-decoration: none;
+  background-color: rgb(88, 102, 124);
+/*greyblue   */
+  color:white;
+  /*offwhite*/
+  border-radius: 2px;
+  padding: 4px 8px;
+  margin: 3px;
+}
+nav li a:hover{
+  text-decoration: underline;
+}
+
+.background{
+  background-image:url(../img/wave.jpg);
+}
+
+/*
+Animation */
+
+.wave {
+    width: 400px;
+    height: 85px;
+    background-image: url("../img/sprite.png");
+
+    /*-webkit-animation: play .8s steps(10) infinite;
+       -moz-animation: play .8s steps(10) infinite;
+        -ms-animation: play .8s steps(10) infinite;
+         -o-animation: play .8s steps(10) infinite;*/
+            animation: play 2s steps(10) infinite;
+}
+
+@-webkit-keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -500px; }
+}
+
+@-moz-keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -500px; }
+}
+
+@-ms-keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -500px; }
+}
+
+@-o-keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -500px; }
+}
+
+@keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -500px; }
+}
+
+/* pushing side to side open */
+#main {
+    width: 350px;
+    height: 100px;
+    border: 1px solid #c3c3c3;
+    display: flex;
+}
+
+#main div {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 300px;
+}
+
+#myBlueDiv {
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    50% {flex-shrink: 8;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    50% {flex-shrink: 8;}
+}
+
+/* pushing side to side close */
+
+/* box moving open */
+.box {
+width: 500px;
+height: 100px;
+background:rgb(103, 127, 239);
+position: relative;
+-webkit-animation: myfirst 5s 5; /* Safari 4.0 - 8.0 */
+-webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+animation: myfirst 5s 2;
+animation-direction: alternate;
+animation-duration: 8s;
+
+}
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes myfirst {
+0%   {background: rgb(103, 127, 239); left: 100px; top: 200px;}
+25%  {background: rgb(182, 192, 237); left: 500px; top: 0px;}
+50%  {background:rgb(137, 144, 175); left: 200px; top: 200px;}
+75%  {background: rgb(107, 110, 124); left: 0px; top: 200px;}
+100% {background:rgb(75, 81, 109); left: 0px; top: 0px;}
+}
+
+@keyframes myfirst {
+0%   {background:rgb(103, 127, 239); left: 100px; top: 200px;}
+25%  {background: rgb(182, 192, 237); left: 500px; top: 0px;}
+50%  {background: rgb(137, 144, 175); left: 200px; top: 200px;}
+75%  {background: rgb(107, 110, 124); left: 0px; top: 200px;}
+100% {background:rgb(75, 81, 109); left: 0px; top: 0px;}
+}
+
+/* box moving close */
+
+
+.top {
+width: 400px;
+height: 300px;
+background:rgb(103, 127, 239);
+position: relative;
+-webkit-animation: myfirst 5s 5; /* Safari 4.0 - 8.0 */
+-webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+animation: myfirst 5s 2;
+animation-direction: alternate;
+animation-duration: 30s;
+
+}
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes myfirst {
+0%   {background: rgb(103, 127, 239); left: 300px; top: 200px;}
+25%  {background: rgb(182, 192, 237); left: 500px; top: 0px;}
+50%  {background:rgb(137, 144, 175); left: 200px; top: 200px;}
+75%  {background: rgb(107, 110, 124); left: 0px; top: 200px;}
+100% {background:rgb(4, 81, 109); left: 0px; top: 0px;}
+}
+
+@keyframes myfirst {
+0%   {background:rgb(103, 127, 239); left: 300px; top: 200px;}
+25%  {background: rgb(182, 192, 237); left: 500px; top: 0px;}
+50%  {background: rgb(137, 144, 175); left: 200px; top: 200px;}
+75%  {background: rgb(107, 110, 124); left: 0px; top: 200px;}
+100% {background:rgb(4, 81, 109); left: 0px; top: 0px;}
+}
