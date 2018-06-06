@@ -1,0 +1,310 @@
+
+body{
+	background-color: #ffffff;
+background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+}
+#stage{
+  height:10000px;
+  width:1500px;
+  margin:0 auto;
+  position:relative;
+  overflow:hidden;
+
+
+}
+/* p{
+  height:100px;
+  width:200px;
+  background:red;
+  color:white;
+  position:absolute;
+  left:-200px;
+
+  transition:left 0.2s;
+} */
+#steps{
+
+ height: 70px;
+  width: 80px;
+  margin: 0 auto;
+  padding: 8pt;
+  line-height: 30px;
+  text-align: center;
+  font-size: 14pt;
+	font-family: 'Questrial', sans-serif;
+  background-color:rgb(122, 90, 84);
+  border-radius: 50%;
+  color: white;
+  position: absolute;
+  top: 20px;
+  left:0;
+
+}
+
+
+
+}
+.title{
+position: relative;
+top: 25px;
+left: 100px;
+}
+.bckinfo{
+position: relative;
+top: 100px;
+left: 50px;
+}
+.title2{
+position: relative;
+top: 0px;
+left: 100px;
+}
+.title3{
+position: relative;
+top: 1000px;
+left: 100px;
+}
+.title4{
+position: relative;
+top: 2000px;
+left: 100px;
+}
+.title5{
+position: relative;
+top:3000px;
+left: 100px;
+}
+.step1{
+	position: relative;
+	top: -2700px;
+	left: 200px;
+
+}
+.step2{
+	position: relative;
+	top: -1000px;
+	left: 200px;
+
+}
+.step3{
+	position: relative;
+	top: 800px;
+	left: 200px;
+
+}
+.step4{
+	position: relative;
+	top: 7000px;
+	left: 200px;
+
+}
+
+.ch-grid {
+	margin: 20px 0 0 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+.ch-grid:after,
+.ch-item:before {
+	content: '';
+    display: table;
+}
+
+.ch-grid:after {
+	clear: both;
+}
+
+.ch-grid li {
+	width: 250px;
+	height: 250px;
+	display: inline-block;
+	margin: 10px;
+}
+
+.ch-item {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	overflow: hidden;
+	position: relative;
+	cursor: default;
+
+}
+
+.ch-img-1 {
+    background-image: url(../img/finecoffee.jpg);
+  }
+
+.ch-img-2 {
+  background-image: url(../img/mediumcoffee.jpg);
+}
+
+.ch-img-3 {
+	  background-image: url(../img/coarsecoffee.jpg);
+    }
+
+.ch-info {
+	position: absolute;
+	background: rgb(122, 90, 84);
+	width: inherit;
+	height: inherit;
+	border-radius: 50%;
+	overflow: hidden;
+	opacity: 0;
+	transition: all 0.4s ease-in-out;
+	transform: scale(0);
+}
+.ch-info h3 {
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 30px;
+	margin: 0 30px;
+	padding: 45px 0 0 0;
+	height: 140px;
+  font-family: 'Questrial', sans-serif;
+	text-shadow:
+		0 0 1px #fff,
+		0 1px 2px rgba(0,0,0,0.3);
+}
+
+.ch-info p {
+	color: #fff;
+	padding: 10px 5px;
+	font-family: 'Lato', sans-serif;
+	margin: 0px 30px;
+	font-size: 16px;
+	border-top: 1px solid rgba(255,255,255,0.5);
+	opacity: 0;
+	transition: all 1s ease-in-out 0.4s;
+}
+
+ .ch-info p a {
+	display: block;
+	color: rgba(255,255,255,0.7);
+	font-style: normal;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 9px;
+	letter-spacing: 1px;
+	padding-top: 4px;
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.ch-info p a:hover {
+	color: rgb(79, 73, 42);
+}
+
+.ch-item:hover {
+	box-shadow:
+		inset 0 0 0 1px rgba(255,255,255,0.1),
+		0 1px 2px rgba(0,0,0,0.1);
+}
+
+.ch-item:hover .ch-info {
+	transform: scale(1);
+	opacity: 1;
+}
+
+.ch-item:hover .ch-info p {
+	opacity: 1;
+}
+
+
+
+
+/* entire container, keeps perspective */
+.flip-grid {
+	margin: 20px ;
+	padding: 5px;
+	list-style: none;
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+.flip-grid li {
+	width: 300px;
+	height: 300px;
+	display: inline-block;
+	margin: 10px;
+}
+
+.flip-container {
+	perspective: 1000px;
+
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 320px;
+	height: 320px;
+	display: block;
+
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
+.box {
+width: 1000px;
+height: 220px;
+position: relative;
+-webkit-animation: myfirst 5s 1; /* Safari 4.0 - 8.0 */
+-webkit-animation-direction: normal; /* Safari 4.0 - 8.0 */
+animation: myfirst 5s 1;
+animation-direction: normal;
+animation-duration: 30s;
+}
+
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes myfirst {
+0%   { left: -1000px; }
+25%  { left: -500px;}
+50%  { left: -300px;}
+75%  { left: -100px;}
+100% { left: 0px; }
+}
+
+@keyframes myfirst {
+	0%   { left: -1000px; }
+	25%  { left: -500px;}
+	50%  { left: -300px;}
+	75%  { left: -100px;}
+	100% { left:  0px; }
+}
+
+/* box moving close */
